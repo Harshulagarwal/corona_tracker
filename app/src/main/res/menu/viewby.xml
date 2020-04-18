@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="view by alphabet order" android:id="@+id/alpha" />
+    <item android:title="view by no of cases" android:id="@+id/cases"/>
+</menu>
