@@ -2,7 +2,7 @@ package com.example.coronatracker;
 
 public class countrydata {
     String name;
-     String flagurl;
+    String flagurl;
     long cases;
     long todaycases;
     long deaths;
@@ -10,15 +10,15 @@ public class countrydata {
     long recoverd;
     long active;
 
-    countrydata(String name,String flagurl,long cases,long todaycases, long deaths, long todaydeaths,long recovered,long active){
-        this.name=name;
-        this.flagurl=flagurl;
-        this.cases=cases;
-        this.todaycases=todaycases;
-        this.deaths=deaths;
-        this.todaydeaths=todaydeaths;
-        this.recoverd=recovered;
-        this.active=active;
+    countrydata(String name, String flagurl, long cases, long todaycases, long deaths, long todaydeaths, long recovered, long active) {
+        this.name = name;
+        this.flagurl = flagurl;
+        this.cases = cases;
+        this.todaycases = todaycases;
+        this.deaths = deaths;
+        this.todaydeaths = todaydeaths;
+        this.recoverd = recovered;
+        this.active = active;
     }
 
     public String getName() {
