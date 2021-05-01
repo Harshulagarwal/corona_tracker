@@ -85,7 +85,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     }
 
     public void onclick(View v) {
-
         appdata.layout_type = 1 - appdata.layout_type;
         startActivity(new Intent(this, MainActivity.class));
         finish();
@@ -268,27 +267,19 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             if (pd.isShowing()) {
                 pd.dismiss();
             }
-
-
             if (appdata.layout_type == 1) {
                 adapter = new recycleradapter(getApplicationContext(), appdata.locallist);
                 recyclerView.setAdapter(adapter);
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setItemViewCacheSize(appdata.locallist.size());
                 recyclerView.setLayoutManager(new GridLayoutManager(MainActivity.this, 3));
-
             } else {
                 adapter = new recycleradapter(getApplicationContext(), appdata.locallist_listview);
                 recyclerView.setAdapter(adapter);
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setItemViewCacheSize(list.size());
-
                 recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-
-
             }
-
-
         }
     }
 }
